@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NoBoolShit</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="//db.onlinewebfonts.com/c/adfdf43cd15f8e6bead6d39ab235f0b7?family=ChantalW00-Medium" rel="stylesheet" type="text/css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    html, body
+    {
+        height: 100%;
+        margin:0;
+        padding:0;
+    }
+
+    div {
+        position:relative;
+        height: 100%;
+        width:100%;
+        overflow: hidden;
+        border-color: green;
+
+    }
+
+    div img {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+    }
+    @keyframes spinner {
+        0% {
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+        100% {
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+    }
+    .spin::before {
+        animation: 1.5s linear infinite spinner;
+        animation-play-state: inherit;
+        border: solid 5px #cfd0d1;
+        border-bottom-color: rebeccapurple;
+        border-radius: 50%;
+        content: "";
+        height: 700px;
+        width: 700px;
+
+        position:absolute;
+        top:0;
+        left:0;
+        padding: 10px;
+        right:0;
+        bottom:0;
+        margin-top:700px;
+        margin-bottom:auto;
+        transform: translate3d(-50%, -50%, 0);
+        will-change: transform;
+        margin-left: 370px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+        <div class="spin">
+            <!--        <div>-->
+<!--            <img  src="peace2.png" width="310" height="501" />-->
+            <!--        </div>-->
+            <!--        <div id="divSafe" style="margin-top: -540px">-->
+            <!--            <p style="text-align: center; font-family: 'ChantalW00-Medium'; font-size: 40px; ">Loading..</p>-->
+            <!--        </div>-->
+        </div>
+            <div id="divSafes" style="margin-top: -1800px" >
+                            <img  src="peace2.png" width="310" height="501" />
+            </div>
+            <div id="divSafe" style="margin-top: -440px">
+                <p style="text-align: center; font-family: 'ChantalW00-Medium'; font-size: 60px; ">Loading....</p>
+            </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
